@@ -2,7 +2,6 @@ function sentenceToUpperCase(sentence) {
   const words = sentence.split(" ");
 
   words.forEach((word, i) => {
-    //powiększone będą parzyste słowa i ewentualnie jedno bo będzie mieć indeks 0
     if (!(i % 2)) {
       words[i] = word.toUpperCase();
     }
