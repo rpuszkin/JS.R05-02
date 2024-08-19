@@ -2,7 +2,7 @@ function sentenceToUpperCase(sentence) {
   const words = sentence.split(" ");
 
   words.forEach((word, i) => {
-    if (!(i % 2)) {
+    if (words.length === 1 || i % 2 !== 0) {
       words[i] = word.toUpperCase();
     }
   });
@@ -14,4 +14,4 @@ function sentenceToUpperCase(sentence) {
 const result1 = sentenceToUpperCase("test");
 const result2 = sentenceToUpperCase("Ala ma kota");
 const result3 = sentenceToUpperCase("Raz dwa trzy cztery");
-console.log(`${result1} ${result1}, ${result2}, ${result3}`);
+console.log(` ${result1} | ${result2} | ${result3}`);
